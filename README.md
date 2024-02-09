@@ -1,5 +1,5 @@
 
-GrinRides Website
+GrinRides 
 Welcome to GrinRides - Where Joy Meets the Road! Our website is your gateway to unforgettable journeys filled with laughter and adventure. Experience the thrill of the open road with our reliable and joyful transportation services.
 
 About GrinRides
