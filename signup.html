@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+
+</head>
+<body>
+    <div class="big_wrapper">
+        <div class="nav_wrapper">
+            <header><h2><a href="#">Ride-my-way</a></h2></header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Signin</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-button" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="content_area">
+            <div class="form_wrapper">
+
+                <div class="form-centered">
+                    <header class=" form-elements"><h2>Sign up to Carpool</h2></header>
+                    <form class="sign_in_form form-elements" id="signupForm">
+                        <input type="text" id="username" name="username" placeholder=" Username" required>
+                        <input type="email" id="email" name="email" placeholder=" email" required>
+                        <input type="number" id="phone_number" name="phone_number" placeholder=" +(256) Mobile" required>
+                        <input type="password" id="password" name="password" placeholder=" Password" required>
+                        <input type="Submit" id="submit" value="Signup" class="button success">
+                    </form>
+                    <div id="signupErrorArea" style="background-color: #dddddd; color: #ff5642; padding: 5px; display: none"></div>
+                    <footer class="form-elements">Already have an account ? <a href="index.html" style="color: #2c3e50; font-weight: bolder">Sign in</a></footer>
+                </div>
+            </div>
+            <div class="about_wrapper">
+                <div class="about_header">
+                    <h2>About</h2>
+                    <p>The section shows some important information about the system</p>
+                </div>
+                <div class="about_content">
+                <div class="about">
+                    <h2>Users</h2>
+                    <p>
+                        The users of the application are travelers and commuters who want to go from one place to
+                        another or users that are driving a trip and want to find passengers. Users can act as both passengers and
+                        drivers while using an application.
+
+                    </p>
+                </div>
+                <div class="about">
+                    <h2>Driver</h2>
+                    <p>
+                        A driver is any person that owns a car and wants to go from one place to another and publishes
+                        his trip on the application in order to find passengers to share the ride with.
+                    </p>
+                </div>
+                <div class="about">
+                    <h2>Passenger</h2>
+                    <p>
+                        A passenger is any person that doesn’t own a car and wants to join a driver in a trip he posted
+                        and agrees to all the conditions specified (price and general behavior).
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <footer class="footer_wrapper">
+            <div class="top_footer_section">
+                <div class="footer_column">
+                    <h1>About Us</h1>
+                    <p>We are a technology company that designs social products. </p><br>
+                    <p>In case of any concern please reach to us via email. We will be there to help</p>
+                </div>
+                <div class="footer_column">
+                </div>
+                <div class="footer_column">
+                    <h1>Contacts</h1>
+                    <span>Email &nbsp; grinrides2@gmail.com</span><br>
+                    <span>+(254) 111278009</span>
+                </div>
+            </div>
+            <div class="bottom_footer_section">
+                <p>&copy; dr.kimpatrick | Andela All rights reserved </p>
+            </div>
+        </footer>
+    </div>
+    <script src="static/js/signup.js" type="module"></script>
+</body>
+</html>
