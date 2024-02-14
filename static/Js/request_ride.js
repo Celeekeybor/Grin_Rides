@@ -1,5 +1,5 @@
 /**
- * Created by Dr.Kimpatrick on 7/27/2018.
+ 
  */
 //logoutUser, loginPageUrl, getFromCurrentUserInfo, getTokenFromVerifyUser, getUserInfo, saveToCurrentUserInfo
 import {getTokenFromVerifyUser, hostAndPortUrl, logoutUser, getFromCurrentUserInfo, getRideId, loginPageUrl} from './main.js'
