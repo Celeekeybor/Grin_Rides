@@ -1,5 +1,5 @@
 /**
- * Created by Dr.Kimpatrick on 8/1/2018.
+ * our group work
  */
 
 import {rejectOrAcceptUrl, hostAndPortUrl, getRejectRequestId ,getRejectedRequestId ,getAcceptedRequestId, getAcceptRequestId, getFromCurrentUserInfo, logoutUser, loginPageUrl, logResult, getTokenFromVerifyUser, getGivenRideId, profilePageDisplayRidesUrl} from './main.js'
