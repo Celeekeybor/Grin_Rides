@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin - Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+    <script src="static/js/accepted_ride_request.js" type="module"></script>
+</head>
+<body>
+    <div class="big_wrapper">
+        <div class="nav_wrapper">
+            <header><h2><a href="available_ride_offers.html">Where Joy Meets the Road</a></h2></header>
+            <nav>
+                <ul>
+                    <li><a href="available_ride_offers.html">Home</a></li>
+                    <li><a href="profile_page_rides_given_and_taken.html" id="currentLoginUsername"></a></li>
+                    <li id="logoutThisUser"><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-button" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="content_area">
+            <div class="ride_wrapper">
+                <div class="page_header">
+                    <h2>Ride details</h2>
+                    <p>Request accepted for the ride
+                    </p>
+                </div>
+                <div class="ride_detail_content">
+                    <!--<table>
+                        <tr>
+                            <th>Driver (name)</th>
+                            <td>kimanje patrick</td>
+                        </tr>
+                        <tr>
+                            <th>Origin</th>
+                            <td>Kampala</td>
+                        </tr>
+                        <tr>
+                            <th>Destination</th>
+                            <td>Masaka</td>
+                        </tr>
+                        <tr>
+                            <th>Meetpoint</th>
+                            <td>Ndeeba</td>
+                        </tr>
+                        <tr>
+                            <th>Contribution</th>
+                            <td>4000/-</td>
+                        </tr>
+                        <tr>
+                            <th>NumFreeSpots</th>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th>Start date</th>
+                            <td>18th-06-2018</td>
+                        </tr>
+                        <tr>
+                            <th>Finish date</th>
+                            <td>22nd-06-2018</td>
+                        </tr>
+                    </table>-->
+                    <div id="rideDetailContent"></div>
+                    <article class="action_area">
+
+                        <h2>Request for a ride</h2>
+                        <hr style="margin: 20px 0">
+                        <ul>
+                            <li class="accepted">Accepted</li>
+                            <li class="button default"><a href="profile_page_rides_given_and_taken.html">Back</a></li>
+                        </ul>
+                        <hr style="margin: 20px 0">
+                        <h2>Driver details</h2>
+                        <span>Email - (<span id="driverEmail"></span>)</span>
+                        <span>Mobile - (<span id="driverMobile"></span>)</span>
+                        <span>Gender - (<span id="driverGender"></span>)</span>
+                        <span><a href="#">View more</a></span>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <footer class="footer_wrapper">
+            <div class="top_footer_section">
+                <div class="footer_column">
+                    <h1>About Us</h1>
+                    <p>We are a technology company that designs social products. </p><br>
+                    <p>In case of any concern please reach to us via email and call. We will be there to help</p>
+                </div>
+                <div class="footer_column">
+                    <h1>Contacts</h1>
+                    <span>Email &nbsp; grinrides82@gmail.com</span><br>
+                    <span>+(254) 111278009</span>
+                </div>
+
+
+            </div>
+            <div class="bottom_footer_section">
+                <p>&copy; Grinrides | All rights reserved </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
