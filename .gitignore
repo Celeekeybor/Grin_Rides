@@ -1,0 +1,28 @@
+# Ignore operating system files
+.DS_Store
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore generated files
+node_modules/
+dist/
+build/
+*.log
+*.swp
+*.o
+*.pyc
+
+# Ignore sensitive information
+.env
+*.key
+*.pem
+*.config
+
+# Ignore user-specific files
+*.DS_Store
+Thumbs.db
+
