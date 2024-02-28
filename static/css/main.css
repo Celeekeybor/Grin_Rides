@@ -1,0 +1,860 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Tahoma', Monaco, "Courier New", Courier, monospace;
+    background-color: #f5f5f5;
+
+}
+/** DEFAULT HEADING SIZES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+p{
+   font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+/*######## DEFAULT TABLE DESIGNS ************************/
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+   border: 1px solid black;
+
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+/***************** default input='' styles *********************************/
+input textarea, select{
+    padding: 5px;
+    margin: 5px;
+}
+
+input[type='text'], input[type='password'], input[type='number'], input[type='date'], textarea, select, input[type='email']{
+    border:1px solid silver;
+    border-radius: 4px;
+    color: #34495e;
+    font-style: normal;
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px 0 5px 5px;
+
+
+}
+
+input[type='submit']{
+    background-color: #2ecc71;
+    color: white;
+    border:1px solid #2ecc71;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+/* wraps the label and input */
+form .form-group{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+
+    form .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.form-group label{
+    width:10%;
+    margin: 5px 5px 5px 0;
+}
+
+.form-group input, textarea, select{
+    width:90%;
+    margin: 5px 0;
+
+}
+
+/*** created to help in centering the content */
+.form-centered{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*** PAGE HEADER | COLORED GREEN (SUCCESS)*******/
+.page_header{
+    background-color: #2ecc71;
+    padding: 50px 100px;
+    color: white;
+}
+@media (max-width: 768px) {
+    .page_header{
+        padding:30px 50px;
+    }
+}
+
+/* centering form content */
+
+
+/********* END OF FORM DEFAULT STYLES**************************/
+
+
+
+
+
+/******************* Top Nav Bar ********************/
+.nav_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #34495e;
+    padding: 30px;
+    position: fixed;
+    width:100%;
+    top:0;
+}
+
+.nav_wrapper header{
+    margin-left: 30px;
+}
+
+.nav_wrapper nav{
+    margin-right: 30px;
+}
+
+
+.nav_wrapper ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 30px;
+    padding-right: 30px;
+
+}
+
+.nav_wrapper a{
+    text-decoration: none;
+    color: silver;
+    padding: 10px;
+}
+
+.nav_wrapper nav a:hover{
+    color: white;
+}
+
+.toggle-button{
+    margin-right: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.toggle-button span{
+    display: block;
+    background-color: silver;
+    width: 30px;
+    height:5px;
+    margin: 3px;
+
+}
+
+/*#### TOGGLE THE HUBER GER MENU**/
+@media (min-width: 768px) {
+    .toggle-button{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* change the margin and padding of
+    of the header from left
+     */
+    .nav_wrapper header{
+        margin-left: 10px;
+    }
+    .nav_wrapper nav{
+        display: none;
+    }
+}
+/* ################ ###############################333 */
+
+/* *********    Login form area ***********/
+.content_area{
+    margin-top: 88px;
+}
+.form_wrapper{
+    background-image: url("../images/carpool.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    width:100%;
+    height: 460px;
+    /* background-attachment: fixed; */
+    text-align: center;
+
+}
+
+
+
+.form_wrapper header{ /* centering all the content */
+    margin: auto;
+    width:100%;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.form_wrapper form{ /* centering all the content */
+    margin: auto;
+    width:100%;
+    padding: 5px;
+
+}
+
+.form_wrapper footer{  /* centering all the content */
+    margin: auto;
+    width:100%;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+/*** login or signup form */
+
+form.sign_in_form{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.sign_in_form input[type='text'], input[type='password'], input[type='email']{
+    background: silver;
+}
+.sign_in_form input[type='number']{
+    background: silver;
+}
+
+/******############ AT A MIN-WIDTH:768PX ***********/
+@media (min-width: 768px) {
+    .form_wrapper header{
+        /* width:30%; */
+    }
+
+    form .sign_in_form{
+        width:30%;
+    }
+    .form_wrapper footer{
+        /* width:30%; */
+    }
+}
+
+
+
+
+
+
+/* ######################## ABOUT SECTION PAGE **********************/
+.about_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.about_header{
+    background-color: #2ecc71;
+    padding: 20px 100px;
+    color: white;
+}
+.about_header h2{
+    padding-bottom: 5px;
+}
+
+.about_content{
+    display: flex;
+    justify-content:space-between;
+    padding: 30px 100px;
+}
+.about{
+    width:30%;
+}
+.about hr{
+    margin-bottom: 5px;
+}
+.about h2{
+    padding-bottom: 20px;
+}
+
+/* ## ABOUT A MAX-WIDTH 768 PX  ##############################################################*/
+@media (max-width: 768px ) {
+    /* DISPLAY THE ABOUT ALL THE ABOUT CONTENT IN A COLUMN */
+
+    .about_header{
+        padding: 20px 40px;
+    }
+    .about_content{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 50px;
+    }
+
+    .about{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ###################************** FOOTER SECTION ##################******************************************/
+.footer_wrapper{
+    display: flex;
+    flex-direction: column;
+    color: silver;
+
+}
+
+/***** TOP FOOTER **********/
+.top_footer_section{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: #34495e;
+    padding:50px 100px;
+
+}
+
+.footer_column{
+    width:30%;
+}
+
+.footer_column h1{
+    padding-bottom:20px;
+    font-size: large;
+    color: white;
+}
+
+.bottom_footer_section{
+    background-color: #2c3e50;
+    font-style: italic;
+    padding: 20px 100px;
+}
+
+/* ******** FOOTER AT A WIDTH OF 768PX ******* */
+@media (max-width: 768px) {
+    .top_footer_section{
+        display: flex;
+        flex-direction:column;
+        padding: 30px 50px;
+
+    }
+
+    .footer_column{
+        margin-bottom: 20px;
+        width:100%;
+
+    }
+    .bottom_footer_section{
+        padding: 30px 30px;
+    }
+}
+
+
+/* ################### PROFILE PAGE ******************************************/
+
+/* wraps all the content on the profile page | profile_top and profile_bottom*/
+.profile_wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10%;
+    width: 80%;
+}
+
+/* wraps | profile_pic and user_summary_info*/
+.profile_top{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .profile_top{
+        display: flex;
+    flex-direction:column;
+    }
+}
+
+
+/* wraps the user profile_picture */
+.profile_pic{
+    flex-basis: 10%;
+}
+
+/* summarises the user info | username_edit_profile, rides_count, user_bio*/
+.user_summary_info{
+    flex-basis:80%;
+    padding: 15px;
+}
+
+/**** wraps username and edit button */
+.username_edit_profile{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+@media (max-width: 768px) {
+    .username_edit_profile{
+        display: block;
+    }
+}
+
+.username_edit_profile h2{
+    font-size: 32px;
+    margin-right: 15px;
+
+}
+
+.username_edit_profile button{
+    font-size: 14px;
+    padding: 2px 10px;
+    text-align: center;
+    border:1px solid silver;
+    border-radius: 4px;
+    width: 150px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+/* rides summary | rides_taken, rides_offered, friends*/
+.rides_count{
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.rides_count ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.rides_count ul li{
+    padding: 5px;
+}
+
+.rides_count span{
+    font-weight: bolder;
+}
+
+.rides_count ul li a{
+    text-decoration: none;
+}
+
+/* alter the color of the active link*/
+/* inactive_ride_status and active_ride_status */
+li.inactive_ride_status{
+    /* color: white; */
+    background-color: silver;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+li.inactive_ride_status a{
+    color: #34495e;
+}
+
+li.active_ride_status{
+    /* color: white; */
+    background-color: #34495e;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+li.active_ride_status a{
+    color: white;
+}
+/* create ride link */
+li.create_ride_link{
+    background-color: #2ecc71;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: large;
+}
+/* plus icon*/
+li.create_ride_link span{
+    background-color: silver;
+    border-radius: 50%;
+    color: white;
+}
+
+
+.user_bio{
+    padding: 5px;
+    margin: 5px;
+}
+
+/* profile_bottom | list of rides offered and given */
+.profile_bottom{
+    width:100%;
+    color: silver;
+}
+
+.profile_bottom:hover{
+    color: #dddddd;
+}
+
+/* wraps ride information */
+.ride_template, .taken_ride_template{
+    background-color: #2c3e50;
+    color: silver;
+    width:auto;
+    height: auto;
+    /* border:1px solid #2c3e50; */
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px;
+    margin: 15px;
+    cursor: pointer;
+}
+.ride_template:hover, .taken_ride_template:hover{
+    color: white;
+    background-color: #34495e;
+}
+@media (max-width: 768px) {
+    .ride_template, .taken_ride_template{
+        margin:20px 30px;
+    }
+}
+
+.ride_template header, .taken_ride_template header{
+    text-align: center;
+    padding: 5px;
+    /* color: silver; */
+    display: none;
+}
+
+.ride_template table, th, td, .taken_ride_template table, th, td {
+    border: 0;
+    /* color: silver; */
+
+}
+.ride_template th, .taken_ride_template th{
+    font-weight: bolder;
+    font-size: large;
+}
+
+
+
+/*###### EDIT PROFILE .HTML WRAPPER */
+.edit_profile_wrapper{
+    padding: 30px;
+    margin: 30px 10%;
+    display: flex;
+    width:80%;
+}
+
+/** wraps the | edit_pic & button */
+.edit_pic_div{
+    width:15%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* profile_pic edit button */
+.edit_pic_div button{
+    border:1px solid silver;
+    border-radius: 4px;
+    padding: 2px;
+    width: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Image it self */
+.edit_pic{
+    margin-right: 5%;
+    width: 100px; height: 100px; border-radius: 50%;
+
+}
+
+/*** user edit form */
+form.edit_profile_form{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*** Edit profile page a MAX-WIDTH : 768PX*/
+@media (max-width: 768px) {
+    .edit_profile_wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/*######### RIDE_DETAIL.HTML *******************/
+
+/* ride_wrapper | ride_detail_header && ride_detail_content */
+.ride_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ## wraps table and article.action_area */
+.ride_detail_content{
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+
+/* EDIT_TABLE*/
+table{
+    border: none;
+    margin-right: 30px;
+}
+
+ /*## article */
+article.action_area{
+
+}
+
+article.action_area ul{
+    list-style-type: none;
+}
+
+article.action_area ul li{
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+article h2{
+    margin: 0 0 20px 0;
+}
+article .request{
+    background-color: #238571;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #dddddd;
+}
+article .accepted{
+    background-color: #2ecc71;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #dddddd;
+}
+
+article .ignore{
+    background-color: peru;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #dddddd;
+}
+
+/* at max-width : 768px */
+@media (max-width: 768px) {
+    .ride_detail_content{
+        display: flex;
+        flex-direction:column;
+    }
+
+    table{
+        width:90%;
+        margin: 20px 5%;
+    }
+}
+/*#######3 Accepted ride */
+
+
+/*####&&&&&&&&&&&&&&&&&& CREATE_RIDE.HTML **************************----------------#################################/
+
+/* create_ride_wrapper | page_header && create_ride_form_wrapper */
+.create_ride_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.create_ride_form{
+    padding: 30px;
+}
+
+
+
+@media (min-width: 768px) {
+    .create_ride_form{
+        width:70%;
+        margin:20px 15%;
+    }
+
+    .create_ride_form label{
+        width:20%;
+
+    }
+
+    .create_ride_form input, select, textarea{
+        width: 60%;
+    }
+}
+
+
+/*************************** AVAILABLE RIDE OFFERS ********-------------------------------*/
+
+/* inherits the ride_template class */
+/* wraps ride_temp_available */
+.available_ride_offers_wrapper{
+    width:80%;
+    margin:50px 10%;
+    padding:30px;
+    /* background-color: #238571; */
+
+}
+.cancel_request_offers_wrapper{
+    width:100%;
+    height: 400px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+.cancel_request_offers_wrapper table{
+
+    /* margin:auto;
+    display: flex;
+    flex-direction: column; */
+    width: 80%;
+    margin: 20px 10%;
+    /* background-color: #238571; */
+
+}
+
+
+/****************** REJECT ACCEPT REQUEST AREA ******************/
+ /* inherits the ride_detail_content */
+.action_area{
+    overflow-x: auto;
+}
+.action_area th, td{
+    border-bottom: 1px solid silver;
+}
+
+.action_area tr:nth-child(even) {
+    background-color: silver;
+}
+button{
+    padding: 5px;
+    border-radius: 4px;
+    border:1px solid silver;
+    margin: 2px;
+}
+
+.button{
+    padding: 5px;
+    border-radius: 4px;
+    border:1px solid silver;
+    margin: 2px;
+}
+
+.danger{
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.warning{
+    background-color: coral;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.success{
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.default{
+    background-color: silver;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.default-cancel{
+    background-color: #ccc969;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
